@@ -1,0 +1,14 @@
+:root {
+    --mainBGColor:#152028;
+    --secondaryBGColor: #192734;
+    --navColor: black;
+
+    --mainTextColor:#fff;
+    --secondaryTextColor: #eeeeee;
+
+    --themeDotBorder: #FFF;
+
+    --buttonColor: cornflowerblue;
+
+    --headerAndFooterColor: radial-gradient(rgb(81, 168, 186), rgb(66, 114, 147), rgb(46, 80, 140));
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+
+    <link rel='stylesheet' href='Style.css'>
+
+    <link id='theme-style' rel='stylesheet' type='text/css' href=''>
+
+    <link href='https://fonts.googleapis.com/css2?family=Goldman&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Goldman&family=Roboto+Mono:wght@500&display=swap'
+        rel='stylesheet'>
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <title>Portfolio Site</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my portfolio site</h1>
+    </header>
+    <i class='fas fa-arrow-circle-up backToTop'></i>
+    <div class='nav'>
+        <button class="tabButton" value='about'>About me</button>
+        <button class="tabButton" value='html'>HTML knowledge</button>
+        <button class="tabButton" value='css'>CSS knowledge</button>
+        <button class="tabButton" value='js'>JavaScript knowledge</button>
+        <button class="tabButton" value='other'>Other</button>
+    </div>
+    <section class='mainContent'>
+
+        <div id='theme-options-wrapper'>
+            <div data-mode='light' id='light-mode' class='theme-dot'></div>
+            <div data-mode='darkblue' id='blue-mode' class='theme-dot'></div>
+            <div data-mode='green' id='green-mode' class='theme-dot'></div>
+            <div data-mode='purple' id='purple-mode' class='theme-dot'></div>
+        </div>
+
+        <section class='tab active' id='about'>
+            <h2 class='section-title'>ABOUT ME</h2>
+
+            <hr />
+
+            <article>
+                <p>Hello there, my name is Jordan Drumev, I was born in 1994 in the city of Tutrakan. From 2001 to 2008
+                    I studied in the "Yordan Yovkov" high school and from 2008 to 2013 I attended the "Geo Milev"
+                    English language school in Ruse. After graduating high school I enrolled in the "Business
+                    Management" course in the "Angel Kanchev" university in Ruse from 2013 to 2017. Shortly after
+                    finishing my university course I began work in "Orgachim Resins" as an assistant supply manager.
+                    While working there I started to slowly adopt the hobby of web programming, initially making simple
+                    HTML pages with bare-bones CSS and later with more advanced CSS and some limited JS functionality.
+                    As time went on it became more and more apparent that my work life left me with very little free
+                    time for any other activities. Seeing as how my interest in programming wasn't weaning by the end of
+                    2018 I had decided that I want to pursue my hobby as a full time job. After quitting my job at
+                    "Orgachim Resins" I started working in my family's store which allowed me to have a lot more free
+                    time to study web programming. In the beginning of 2020 I decided that if I wanted to gain more
+                    in-depth knowledge about web programming I needed to find a job with experienced co-workers from
+                    whom I can learn.</p>
+            </article>
+        </section>
+        <section class='tab' id='html'>
+            <h2 class='section-title'>HTML KNOWLEDGE</h2>
+
+            <hr />
+
+            <article>
+                <p>
+                    HTML was my first interaction with website building and web programming back in the end of 2017.
+                    Starting with absolutely no knowledge of HTML, I was fascinated with even the most basic things like
+                    HTML elements, making links or forms and using Iframes. Before this I never thought about how sites
+                    were build and now I'd go to some sites just to see how they were structured and if they were using
+                    semantic HTML or any other HTML5 elements. Since then I've learned a lot about HTML, for instance:
+                    semantic HTML(like the one used to make this site), how to make basic use of canvas, but there are
+                    other things that I still want to learn(SVG being one of them).
+                </p>
+            </article>
+        </section>
+        <section class='tab' id='css'>
+            <h2 class='section-title'>CSS KNOWLEDGE</h2>
+
+            <hr />
+
+            <article>
+                <p>Shortly after learning the basics of HTML I started to tinker with the CSS. Initially just changing
+                    the color, size and background of the font with inline code then I learned about the selectors and
+                    internal CSS. After that came the padding, margin, borders and the box model along with how
+                    different elements are displayed and how they can be positioned . I also learned about specificity,
+                    css variables, box sizing, transitions, animations and flexbox, grid, media queries which are some
+                    of the tool used to make a responsive website.</p>
+            </article>
+        </section>
+        <section class='tab' id='js'>
+            <h2 class='section-title'>JAVASCRIPT KNOWLEDGE</h2>
+
+            <hr />
+
+            <article>
+                <p>HTML and CSS are essential for building a website, but to make it actually function a website
+                    requires JavaScript. JS was the hardest of the three languages to learn not only because it has a
+                    lot more to it than the other two, but also because it was my first contact with real programming. I
+                    started slowly with basic programming concepts like variables and their types, if statements, loops,
+                    functions, recursion and scopes. After that I moved on to more in-depth study of each variable type,
+                    their specifics and methods. At that time I also started to learn about all the things that
+                    differentiate JS from most other languages and also recursion because I didn't get it the first
+                    time. Probably the biggest of these differences are the lax rules when declaring a variable, no need
+                    to specify a type or a size, hoisting and the lack of local scope prior to the introduction of let
+                    and const. As time went on I got the hang of all these concepts and more, my current frontier is
+                    learning how the event loop works.</p>
+            </article>
+        </section>
+        <section class='tab' id='other'>
+            <h2 class='section-title'>OTHER</h2>
+
+            <hr />
+
+            <article>
+                <p> I also have experience with: <br /> 
+                    -JQuery <br /> 
+                    -XML/JSON <br /> 
+                    -AJAX <br /> 
+                    -REST <br /> 
+                    -Node.js <br />  
+                    -Express.js <br />  
+                    -React JS <br />
+                    -Mongoose <br /> 
+                    -MongoDB <br /> 
+                    -DiscordJS
+                </p>
+            </article>
+        </section>
+    </section>
+
+    <section class='other-projects'>
+        <h2>Other Projects</h2>
+        <div class='other-projects-container'>
+
+            <div class='other-post'>
+                <img src='./images/dog.jpg' alt='Memory Test Game picture'>
+                <h3>Memory Test Game</h3>
+                <p>I small project with HTML canvas, where the goal is to remember
+                    the positions and the sequence of a certain number of black cirles with numbers
+                    in inside and click them in the right order(my personal best record was 8)</p>
+            </div>
+
+            <div class='other-post'>
+                <img src=./images/dog.jpg alt='Discord Bot picture'>
+                <h3>Discord Bot</h3>
+                <p>Trying to learn how to implement a discord bot and how to use the
+                    discordjs APIs</p>
+            </div>
+
+            <div class='other-post'>
+                <img src='./images/dog.jpg' alt='Pictrure of my Nasa API Spa'>
+                <h3>Nasa API</h3>
+                <p>Just a project to get experience with React and the NASA APIs</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Created by: Jordan Drumev</p>
+        <p>Email: <a href='mailto:jordandrumev@example.com'>jordandrumev@example.com</a>.</p>
+        <p>Phone: 1234567890</p>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='index.js'></script>
+</body>
+
+</html>

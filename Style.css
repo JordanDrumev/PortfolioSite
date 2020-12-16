@@ -1,0 +1,266 @@
+:root {
+    --mainBGColor: rgb(255, 255, 255);
+    --secondaryBGColor: rgb(241, 235, 235);
+    --navColor: black;
+    
+    --mainTextColor: #eaeaea;
+    --secondaryTextColor: black;
+
+    --themeDotBorder: rgb(48, 32, 32);
+
+    --buttonColor: cornflowerblue;
+
+    --headerAndFooterColor: radial-gradient(rgb(81, 168, 186), rgb(66, 114, 147), rgb(46, 80, 140));
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    transition: 0.3s;
+}
+
+h1, button
+ {
+    color: var(--mainTextColor);
+    font-family: 'Goldman', cursive;
+}
+
+h2,
+h3 {
+    color: var(--secondaryTextColor);
+    font-family: 'Goldman', cursive;
+}
+
+
+p,
+button,
+a,
+img {
+    color: var(--secondaryTextColor);
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    text-align: center;
+    background-image: var(--headerAndFooterColor);
+    padding: 16px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header h1 {
+    font-size: 56px;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 1%;
+    right: 50%;
+    z-index: 99;
+}
+
+.nav {
+    display: flex;
+    background-color:var(--navColor);
+    justify-content: center;
+}
+
+.tabButton {
+    padding: 8px;
+    text-align: center;
+    background-color: var(--buttonColor);
+    border-radius: 12px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin: 5px;
+}
+
+.tabButton:hover {
+    background-color: rgb(42, 128, 193);
+}
+
+.tabButton:active {
+    background-color: purple;
+}
+
+.mainContent {
+    padding: 15px 0;
+    min-height: 350px;
+    background-color: var(--secondaryBGColor);
+}
+
+#theme-options-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dot {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+
+    margin: 5px;
+    border: 2px solid var(--themeDotBorder);
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+}
+
+.theme-dot:hover {
+    border-width: 5px;
+}
+
+#light-mode {
+    background-color: #fff;
+}
+
+#blue-mode {
+    background-color: #2a4457;
+}
+
+#green-mode {
+    background-color: rgb(31, 202, 40);
+}
+
+#purple-mode {
+    background-color: rgb(172, 10, 123);
+}
+
+hr {
+    background-color: black;
+    height: 5px;
+}
+
+.tab {
+    display: none;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 50%;
+    margin: 15px auto;
+    background-color: var(--mainBGColor);
+    -webkit-box-shadow: 10px 10px 5px  grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.active {
+    display: block;
+}
+
+.section-title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+}
+
+article {
+    padding: 50px;
+    text-indent: 50px;
+}
+
+.tab p {
+    text-align: justify;
+}
+
+.other-projects {
+    background-color: var(--mainBGColor);
+}
+
+.other-projects h2 {
+    text-align: center;
+}
+
+.other-projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+.other-post {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    -webkit-box-shadow: 10px 10px 5px  grey;
+    -moz-box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px grey;
+    background-color: var(--secondaryBGColor);
+}
+
+footer {
+    text-align: center;
+    background-image: var(--headerAndFooterColor);
+    border-top: 15px solid var(--navColor);
+}
+
+footer p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
+}
+
+footer a {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        text-align: center;
+        padding: 1px;
+        border-radius: 12px;
+    }
+    .nav {
+        display: block;
+        background-color: white;
+    }
+    
+    .tabButton{
+        width: 100%;
+    }
+    
+    .tab {
+        display: none;
+        width: 100%;
+    }
+    
+    .active {
+        display: block;
+    }
+
+    article {
+        padding: 5px;
+        text-indent: 50px;
+    }
+    
+    .backToTop{ 
+        position: fixed;
+        bottom: 1%;
+        right: 50%;
+        z-index: 99;
+    }
+    
+    footer {
+        text-align: center;
+        border-radius: 12px;
+    }
+}
